@@ -6,7 +6,8 @@ use Doctrine\DBAL\DriverManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
 
-class EntityManagerCreator {
+class EntityManagerCreator
+{
     public static function createEntityManager(): EntityManager {
         $config = ORMSetup::createAttributeMetadataConfiguration(
             paths: [__DIR__ . '/src'],
